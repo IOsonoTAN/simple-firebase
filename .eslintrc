@@ -1,0 +1,10 @@
+{
+    "extends": "standard",
+    "rules": {
+        "space-before-function-paren": "off",
+        "no-new": "off"
+    },
+    "env": {
+        "mocha": true
+    }
+}
