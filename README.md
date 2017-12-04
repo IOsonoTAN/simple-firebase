@@ -1,5 +1,10 @@
 # Simple using Firebase
 
+## Install Node Modules
+```
+npm i
+```
+
 ## Add these variable into `.env`
 ```
 DEBUG=app*
