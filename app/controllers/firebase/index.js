@@ -1,7 +1,7 @@
 const config = require('../../config')
 const firebase = require('firebase')
 const admin = require('firebase-admin')
-const serviceAccount = require('../../../keys/firebase/firebaseServiceAccountKey.json')
+const serviceAccount = require('../../keys/firebase/firebaseServiceAccountKey.json')
 
 const databaseURL = config.firebase.databaseURL
 

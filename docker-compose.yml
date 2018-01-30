@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  api:
+    build:
+      context: .
+      args:
+        NODE_ENV: "production"
+    container_name: aroydee-firebase-login
+    env_file: .env
+    ports:
+      - 4000:3000

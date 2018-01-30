@@ -7,9 +7,9 @@ module.exports = {
     server: process.env.DB_MONGO_URL || 'mongodb://localhost:27017/seven'
   },
   redis: {
-    server: process.env.DB_REDIS_URL || 'redis://localhost:6379',
-    auth: process.env.DB_REDIS_AUTH,
-    ns: process.env.DB_REDIS_NAMESPACE || 'seven'
+    server: process.env.DB_REDIS_URL || 'redis://localhost:6379'
+    // auth: process.env.DB_REDIS_AUTH,
+    // ns: process.env.DB_REDIS_NAMESPACE || 'seven'
   },
   firebase: {
     apiKey: process.env.FIREBASE_API_KEY,
