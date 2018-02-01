@@ -6,13 +6,22 @@ const login = async (ctx) => {
       email,
       password
     } = ctx.request.query
+
+    ctx.validateQuery('email')
+      .optional()
+      .isString()
+      .trim()
+      .isEmail('Invalid email format')
+
     const accessToken = await firebase.auth()
       .signInWithEmailAndPassword(email, password)
 
-    ctx.body = accessToken
+    ctx.ok(accessToken)
   } catch (e) {
-    console.log('e ->', e)
-    ctx.throw(e.code, e.message)
+    ctx.badRequest({
+      error: e.message,
+      stack: e.stack
+    })
   }
 }
 

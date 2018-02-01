@@ -14,7 +14,7 @@ COPY package.json yarn.lock ./
 
 RUN mkdir -p /app/keys/
 
-COPY ./app/keys/firebaseKey.json /app/keys/firebaseKey.json
+COPY ./app/keys/firebase/firebaseServiceAccountKey.json /app/keys/firebase/firebaseServiceAccountKey.json
 
 ENTRYPOINT ["sh", "./entrypoint.sh"]
 

@@ -6,7 +6,7 @@ services:
       context: .
       args:
         NODE_ENV: "production"
-    container_name: aroydee-firebase-login
+    container_name: firebase-login
     env_file: .env
     ports:
-      - 4000:3000
+      - 3004:3004
